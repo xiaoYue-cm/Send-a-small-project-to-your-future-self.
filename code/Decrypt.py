@@ -132,7 +132,7 @@ class Win(WinGUI):
             self.tk_label_mm3lof2y.config(text="100%")
             self.update_idletasks()
             messagebox.showinfo("成功", f"解密完成，文件已保存至:\n{outfile}")
-            except Exception as e:
+        except Exception as e:
             self.tk_progressbar_mm3lo469['value'] = 0
             self.tk_label_mm3lof2y.config(text="错误")
             self.update_idletasks()
@@ -178,4 +178,5 @@ class Win(WinGUI):
 
 if __name__ == "__main__":
     app = Win()
+
     app.mainloop()
